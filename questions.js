@@ -1498,3 +1498,710 @@ const module2Questions = [
 
 // Asosiy questions massiviga biriktirish:
 questions.push(...module2Questions);
+const module3Questions = [
+  {
+    id: 201,
+    module: 3,
+    type: "single",
+    question:
+      "You need to change the speed of the mouse cursor as it moves across your computer screen. Which option should you choose?",
+    options: [
+      "A. Natural scrolling",
+      "B. Tracking speed",
+      "C. Secondary click",
+      "D. Double-Click Speed",
+    ],
+    correct: [1],
+  },
+  {
+    id: 202,
+    module: 3,
+    type: "true_false",
+    question:
+      "As you're walking to your desk you see a USB drive on the floor. For each of the four statements about unknown USB drives, select whether it is True or False.",
+    statements: [
+      {
+        text: "To find the owner you should plug the USB drive into your laptop.",
+        correct: "False",
+      },
+      {
+        text: "You should throw the USB drive in the trash without plugging it in.",
+        correct: "True",
+      },
+      {
+        text: "Plugging in the drive may expose your computer to harmful software.",
+        correct: "True",
+      },
+      {
+        text: "USB drives can cause physical damage to a computer's components.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 203,
+    module: 3,
+    type: "single",
+    question:
+      "Mrs. Wilkins is working in a spreadsheet. In the first column, she enters a list of students. Partway through she notices that as she types the letter 'Y', the word 'Yes' appears automatically. Which feature caused this change?",
+    options: ["A. AutoComplete", "B. AutoFill", "C. AutoFormat", "D. AutoFit"],
+    correct: [0],
+  },
+  {
+    id: 204,
+    module: 3,
+    type: "true_false",
+    question: "For each statement about file encryption, select True or False.",
+    statements: [
+      {
+        text: "Encrypting files decreases file access speed.",
+        correct: "True",
+      },
+      {
+        text: "All files in cloud storage are encrypted by default.",
+        correct: "False",
+      },
+      {
+        text: "You can open an encrypted file only on the computer on which it was encrypted.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 205,
+    module: 3,
+    type: "single",
+    question: "What is one advantage of using macros in software programs?",
+    options: [
+      "A. They automate repetitive tasks.",
+      "B. They store files online automatically.",
+      "C. They provide cloud storage services.",
+      "D. They automatically correct spelling errors.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 206,
+    module: 3,
+    type: "single",
+    question:
+      "The content shown on your computer monitor is difficult to see (dark areas too dark, bright areas too bright). Which monitor setting should you adjust?",
+    options: [
+      "A. Contrast",
+      "B. Brightness",
+      "C. Input Source",
+      "D. Sharpness",
+    ],
+    correct: [0],
+  },
+  {
+    id: 207,
+    module: 3,
+    type: "checkbox",
+    question:
+      "What are two advantages of Universal Design environments? (Choose 2.)",
+    options: [
+      "A. UD environments are usable and marketable to everyone.",
+      "B. They encourage interaction between people of different ages.",
+      "C. They offer individual adaptations for people with disabilities.",
+      "D. UD environments focus on increasingly multiethnic populations.",
+    ],
+    correct: [0, 2],
+  },
+  {
+    id: 208,
+    module: 3,
+    type: "matching",
+    question:
+      "You need to identify the advantages of inkjet printers and laser printers. Move each advantage to the corresponding printer type.",
+    mappings: [
+      {
+        description: "Environmentally friendly (Laser Printer)",
+        term: "Laser Printer",
+      },
+      {
+        description:
+          "Documents are dry to the touch when printed (Laser Printer)",
+        term: "Laser Printer",
+      },
+    ],
+  },
+  {
+    id: 209,
+    module: 3,
+    type: "matching",
+    question:
+      "For each of the three actions, select whether you should use a USB-C or a CAT6 Ethernet cable.",
+    mappings: [
+      { description: "Connect a laptop to a projector", term: "USB-C" },
+      { description: "Connect to the internet", term: "CAT6 Ethernet" },
+      {
+        description: "Charge Bluetooth devices (headphones, keyboards, etc.)",
+        term: "USB-C",
+      },
+    ],
+  },
+  {
+    id: 210,
+    module: 3,
+    type: "single",
+    question:
+      "You have separate Google accounts for school and personal use. You are logged into your personal account and need to access a file shared with your school account. What should you do?",
+    options: [
+      "A. Switch from your personal Google account to your school account.",
+      "B. Configure both accounts to use the same password.",
+      "C. Share the file with your personal Google account.",
+      "D. Copy the contents of the file into your personal account.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 211,
+    module: 3,
+    type: "single",
+    question:
+      "You are applying for a job in your chosen career field. What should you do to support your professional online profile?",
+    options: [
+      "A. Restrict access to the profile to maintain privacy.",
+      "B. Include your salary history and expectations.",
+      "C. Update the profile regularly to showcase your skills.",
+      "D. Include information about personal activities to demonstrate balance.",
+    ],
+    correct: [2],
+  },
+  {
+    id: 212,
+    module: 3,
+    type: "true_false",
+    question:
+      "You find a social media post sharing inaccurate medical information. For each response, select Yes if it adheres to appropriate digital etiquette or No if it does not.",
+    statements: [
+      {
+        text: '"Everyone knows this isn\'t true. Why are you spreading harmful rumors?"',
+        correct: "No",
+      },
+      {
+        text: '"Dr. Janae Johnson of Harvard Medical School has proven this idea is false."',
+        correct: "Yes",
+      },
+      {
+        text: '"Here\'s a list of current resources that may help to change your mind."',
+        correct: "Yes",
+      },
+      {
+        text: "\"You skipped Yale Med School's latest findings. I'm so tired of internet trolls!\"",
+        correct: "No",
+      },
+    ],
+  },
+  {
+    id: 213,
+    module: 3,
+    type: "checkbox",
+    question:
+      "Your teacher invites a guest speaker. You need to demonstrate good digital etiquette and show the speaker you are listening. Which two actions are appropriate? (Choose 2.)",
+    options: [
+      "A. Maintain eye contact and use appropriate body language to demonstrate your engagement.",
+      "B. Use your tablet or laptop to take notes, while still making good eye contact with the speaker.",
+      "C. Use your smartphone to take photos of the speaker to post on social media later.",
+      "D. Use your tablet or phone to record the speaker's presentation in case you miss something.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 214,
+    module: 3,
+    type: "checkbox",
+    question:
+      "You lead a team of people of differing beliefs, backgrounds, and ages. You plan to host a remote meeting using videoconferencing. Which two actions should you take to demonstrate good digital etiquette? (Choose 2.)",
+    options: [
+      "A. Use the videoconferencing platform's transcription tool so everyone can follow the conversation.",
+      "B. Use features such as Raise Hand to provide opportunities for all team members to participate.",
+      "C. Keep the team focused and avoid conflicts by limiting discussion to a list of only a few ideas.",
+      "D. At the beginning of the meeting, ask younger team members to act as tech buddies for the older people.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 215,
+    module: 3,
+    type: "checkbox",
+    question:
+      "You are offered an unpaid summer internship at a local technology firm before your senior year. What are two reasons to accept the internship? (Choose 2.)",
+    options: [
+      "A. Internships can make your college applications more competitive.",
+      "B. The internship will let you develop your IT skills in a professional setting.",
+      "C. The internship will allow you to manage an active IT data center.",
+      "D. Internships can lead to an increase in social media followers.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 216,
+    module: 3,
+    type: "true_false",
+    question:
+      "You are doing research for a school project about sharks. For each resource, select Yes if it is a reliable and citable source or No if it is not.",
+    statements: [
+      {
+        text: "An interview with a person who survived a shark attack",
+        correct: "Yes",
+      },
+      {
+        text: "An online resource like Encyclopedia Britannica",
+        correct: "Yes",
+      },
+      { text: "Your classmates", correct: "No" },
+      { text: "Articles from Google Scholar", correct: "Yes" },
+    ],
+  },
+  {
+    id: 217,
+    module: 3,
+    type: "single",
+    question:
+      "You are writing a report about the War of 1812 and need to filter your search results to display only articles published in the past year. Which button can you select?",
+    options: [
+      "A. Tools button",
+      "B. Settings button",
+      "C. Images tab",
+      "D. News tab",
+    ],
+    correct: [0],
+  },
+  {
+    id: 218,
+    module: 3,
+    type: "true_false",
+    question:
+      "You need to research the impacts of online learning. For each statement, select Yes if the search result is relevant or No if it is not.",
+    statements: [
+      { text: "An article about the benefits of education", correct: "No" },
+      {
+        text: "A website offering educational resources for sale",
+        correct: "No",
+      },
+      {
+        text: "A graph comparing test scores of students in online and in-person educational systems",
+        correct: "Yes",
+      },
+      {
+        text: "An article in an educational magazine about teachers' online teaching experiences",
+        correct: "Yes",
+      },
+    ],
+  },
+  {
+    id: 219,
+    module: 3,
+    type: "true_false",
+    question:
+      "You need to assess whether the content of an online article is biased. For each aspect, select Yes if you should check it to assess bias or No if you should not.",
+    statements: [
+      { text: "Article funding source", correct: "Yes" },
+      { text: "Article publication date", correct: "Yes" },
+      { text: "Education level of the author", correct: "No" },
+      {
+        text: "Connections of the author to political organizations",
+        correct: "Yes",
+      },
+    ],
+  },
+  {
+    id: 220,
+    module: 3,
+    type: "single",
+    question: "Which statement about filling out online forms is true?",
+    options: [
+      "A. Microsoft Forms can be filled out by people outside of the creator's organization.",
+      "B. Filling out Microsoft Forms requires an Office 365 license.",
+      "C. Filling out an online PDF form requires an Adobe Acrobat license.",
+      "D. Google Forms always require that you provide an email address.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 221,
+    module: 3,
+    type: "checkbox",
+    question:
+      "You need to change an image by removing the figure from the left side and changing it from color to monochrome. Which two photo editing tools should you use? (Choose 2.)",
+    options: ["A. Crop", "B. Filter", "C. Exposure", "D. Trim"],
+    correct: [0, 1],
+  },
+  {
+    id: 222,
+    module: 3,
+    type: "checkbox",
+    question:
+      "You create a long document with many section titles. For which two reasons should you format the section titles with heading styles? (Choose 2.)",
+    options: [
+      "A. So that you can automatically generate a table of contents for the document",
+      "B. To apply consistent formatting to each level of heading text",
+      "C. So that you can include the same information (such as a page number) on every page",
+      "D. To enable unique permissions for each section",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 223,
+    module: 3,
+    type: "single",
+    question:
+      "What is the function of using headers and footers in a document?",
+    options: [
+      "A. To display recurring information such as page numbers or the document title",
+      "B. To incorporate decorative elements that enhance the design",
+      "C. To provide space for important images related to the content",
+      "D. To offer a summary of the document's main points on each page",
+    ],
+    correct: [0],
+  },
+  {
+    id: 224,
+    module: 3,
+    type: "true_false",
+    question:
+      "For each of the three statements about using the Track Changes feature for word processing, select True or False.",
+    statements: [
+      {
+        text: "Track Changes allows you to toggle between changes made by you or by everyone.",
+        correct: "True",
+      },
+      {
+        text: "Track Changes can be used only when a document is shared via online syncing.",
+        correct: "False",
+      },
+      {
+        text: "Find and Replace > Go To lets you focus on the comments of a specific reviewer.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 225,
+    module: 3,
+    type: "single",
+    question: "What is a primary purpose of file versioning?",
+    options: [
+      "A. To enable users to recover earlier copies of the file",
+      "B. To enable multiple users to collaborate on the file content",
+      "C. To identify the date the file was created",
+      "D. To identify the file as a draft, not a final release",
+    ],
+    correct: [0],
+  },
+  {
+    id: 226,
+    module: 3,
+    type: "checkbox",
+    question:
+      "Bryce is experiencing anxiety and depression due to his fear of missing out (FOMO). What are two symptoms or effects of his FOMO? (Choose 2.)",
+    options: [
+      "A. He needs to understand all the 'in jokes' his friends post on social media.",
+      "B. Whenever he enjoys an activity, he must immediately update his status online.",
+      "C. He becomes nervous when giving a presentation in front of his classmates.",
+      "D. He worries that his grades will suffer if he does not complete his homework.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 227,
+    module: 3,
+    type: "true_false",
+    question:
+      "For each statement about file compression, indicate whether the statement is True or False.",
+    statements: [
+      {
+        text: "Compressing files makes transferring easier, since it reduces the total amount of files being shared.",
+        correct: "True",
+      },
+      {
+        text: "Unlike pdf documents, there are no solutions available commercially to password protect a compressed archive.",
+        correct: "False",
+      },
+      {
+        text: "In addition to third-party compression applications, most modern Operating Systems offer a system-level option to compress files.",
+        correct: "True",
+      },
+      {
+        text: "Compressing multiple files into a single file always results in a smaller file, thus making it an efficient solution for long-term file storage.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 228,
+    module: 3,
+    type: "matching",
+    question:
+      "Move each positive or negative aspect of AI to its impact on the right.",
+    mappings: [
+      {
+        description: "Creates specific content improving user engagement",
+        term: "Personalization of content",
+      },
+      {
+        description: "Reproduces biases that exist in the data it analyzes",
+        term: "Ethical concerns",
+      },
+      {
+        description:
+          "Frees up time for computer users to focus on more strategic actions",
+        term: "Automation of repetitive tasks",
+      },
+    ],
+  },
+  {
+    id: 229,
+    module: 3,
+    type: "matching",
+    question:
+      "Move the Artificial Intelligence ethical challenge on the left to its description on the right.",
+    mappings: [
+      {
+        description:
+          "AI may exhibit limited openness, which can potentially mislead the audience regarding origin and intent.",
+        term: "Deception and lack of transparency",
+      },
+      {
+        description:
+          "AI's limited comprehension of social norms and cultural aspects can result in producing inappropriate content.",
+        term: "Lack of contextual understanding",
+      },
+      {
+        description:
+          "AI-generated content may perpetuate stereotypes or discriminatory views.",
+        term: "Promotion of harmful biased views",
+      },
+      {
+        description:
+          "AI can create manipulated media, which may defame individuals and spread misinformation.",
+        term: "Deepfake development",
+      },
+    ],
+  },
+  {
+    id: 230,
+    module: 3,
+    type: "matching",
+    question:
+      "Move each file extension from the list on the left to the corresponding scenario on the right.",
+    mappings: [
+      { description: "A file that contains unformatted text", term: ".txt" },
+      { description: "A logo with a transparent background", term: ".png" },
+      {
+        description: "A photo that you will display on a webpage",
+        term: ".jpg",
+      },
+      {
+        description: "A file that you will email to a printing company",
+        term: ".pdf",
+      },
+    ],
+  },
+  {
+    id: 231,
+    module: 3,
+    type: "checkbox",
+    question:
+      "Which two are appropriate situations for using the Bcc field of an email message? (Choose 2.)",
+    options: [
+      "A. You are sending an email to a large group of people and want to be sure they cannot use 'reply all.'",
+      "B. You are sending an email to a large group of people and want to keep their email addresses private.",
+      "C. You are trying to create a threaded group discussion about an important topic.",
+      "D. You are having a problem with a classmate and want to be sure your teacher knows what's going on.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 232,
+    module: 3,
+    type: "single",
+    question:
+      "When composing an email, what is a good practice to ensure clarity?",
+    options: [
+      "A. Write a simple subject line.",
+      "B. Use all capital letters for emphasis.",
+      "C. Include screenshots and diagrams.",
+      "D. Use informal language.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 233,
+    module: 3,
+    type: "single",
+    question:
+      "What is an advantage of using a digital wallet such as Apple Pay or Google Pay?",
+    options: [
+      "A. Requires you to authorize every transaction",
+      "B. Allows you to perform transactions without authenticating",
+      "C. Transmits your account information directly to the retailer",
+      "D. Allows you to safely build your credit history",
+    ],
+    correct: [0],
+  },
+  {
+    id: 234,
+    module: 3,
+    type: "matching",
+    question: "For each item, select whether it is Goods or Services.",
+    mappings: [
+      { description: "iCloud", term: "Services" },
+      { description: "Laptop", term: "Goods" },
+      { description: "Hard drive", term: "Goods" },
+      { description: "Tech Support", term: "Services" },
+    ],
+  },
+  {
+    id: 235,
+    module: 3,
+    type: "matching",
+    question:
+      "Move each digital collaboration tool from the list on the left to its description on the right.",
+    mappings: [
+      {
+        description:
+          "Collaborators can edit files at the same time and automatically save their changes.",
+        term: "Cloud file sharing",
+      },
+      {
+        description:
+          "Collaborators can simultaneously brainstorm, review, and edit visual information.",
+        term: "Online whiteboard",
+      },
+      {
+        description:
+          "Collaborators participate in learning activities and immediately share reactions and ideas.",
+        term: "Webinar",
+      },
+    ],
+  },
+  {
+    id: 236,
+    module: 3,
+    type: "checkbox",
+    question: "Which two communication methods are asynchronous? (Choose 2.)",
+    options: [
+      "A. Emailing",
+      "B. Text messaging",
+      "C. Telephoning",
+      "D. Videoconferencing",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 237,
+    module: 3,
+    type: "true_false",
+    question:
+      "You have joined a team that uses collaboration. For each statement about collaboration, select True or False.",
+    statements: [
+      {
+        text: "Individual input and creative decision-making will be limited.",
+        correct: "False",
+      },
+      {
+        text: "Members share ideas to come up with solutions.",
+        correct: "True",
+      },
+      {
+        text: "Everyone in the group will have the same perspectives for the project.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 238,
+    module: 3,
+    type: "checkbox",
+    question:
+      "You plan to attend a live webinar about school science lab safety rules. Which three actions should you take to be respectful and polite? (Choose 3.)",
+    options: [
+      "A. Log in early to ensure that the webinar application is working.",
+      "B. Mute your audio unless the presenter calls on you to speak.",
+      "C. Express critical opinions of the content in the public chat area.",
+      "D. Open other browser tabs so you can multitask for other purposes.",
+    ],
+    correct: [0, 1], // A, B va boshqalar shartga ko'ra
+  },
+  {
+    id: 239,
+    module: 3,
+    type: "checkbox",
+    question:
+      "Your team disagrees about a task over email, and you feel strongly your opinion is correct. Which two steps could you take that follow digital etiquette?",
+    options: [
+      "A. Pause the conversation to research the issue further, then compose a clear email describing your opinion.",
+      "B. Schedule an in-person or virtual meeting with the whole team to discuss the task together face-to-face.",
+      "C. Post about your team's disagreement publicly on social media and ask for opinions.",
+      "D. Compose an email using strong language that shows how you feel, and send it to everyone.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 240,
+    module: 3,
+    type: "true_false",
+    question:
+      "Your employer provides you with an adjustable chair to help prevent repetitive strain injury (RSI). For each position, select Yes if it helps or No if it does not.",
+    statements: [
+      { text: "Your knees are higher than your hips.", correct: "No" },
+      { text: "Your feet are flat on the floor or footrest.", correct: "Yes" },
+      {
+        text: "Your arms form a 90-degree angle, with your elbows at your side.",
+        correct: "Yes",
+      },
+    ],
+  },
+  {
+    id: 241,
+    module: 3,
+    type: "true_false",
+    question:
+      "For each physical symptom, select Yes if it is a sign of repetitive strain injury (RSI) or No if it is not.",
+    statements: [
+      { text: "Pain", correct: "Yes" },
+      { text: "Itching", correct: "No" },
+      { text: "Tingling", correct: "Yes" },
+      { text: "Weakness", correct: "Yes" },
+    ],
+  },
+  {
+    id: 242,
+    module: 3,
+    type: "single",
+    question:
+      "A teenage neighbor pretends to be a 40-year-old man online, connects with people, and sponsors a fake fundraiser. What is she doing?",
+    options: ["A. Catfishing", "B. Cyberhacking", "C. Trolling", "D. Phishing"],
+    correct: [0],
+  },
+  {
+    id: 243,
+    module: 3,
+    type: "checkbox",
+    question:
+      "Which three are effective strategies for maintaining mental well-being while using technology? (Choose 3.)",
+    options: [
+      "A. Balance screen time with analog activities.",
+      "B. Make time for regular face-to-face interactions.",
+      "C. Take breaks from screens throughout the day.",
+      "D. Stay up to date by checking social media often.",
+      "E. Set notifications for every app on your device.",
+    ],
+    correct: [0, 1, 2],
+  },
+  {
+    id: 244,
+    module: 3,
+    type: "single",
+    question:
+      "What is the process of converting data into an unrecognizable form that requires the use of a key to return the data to plain text?",
+    options: ["A. Compression", "B. Encoding", "C. Encryption", "D. Hashing"],
+    correct: [2],
+  },
+];
+
+// Asosiy massivga qo'shish:
+questions.push(...module3Questions);
