@@ -2205,3 +2205,859 @@ const module3Questions = [
 
 // Asosiy massivga qo'shish:
 questions.push(...module3Questions);
+const module4Questions = [
+  {
+    id: 301,
+    module: 4,
+    type: "single",
+    question:
+      "Which option protects a file by requiring authentication before access?",
+    options: [
+      "A. Add a password that is required to open the file",
+      "B. Mark the file as Read-only",
+      "C. Limit editing to tracked changes",
+      "D. Protect the document for comments only",
+    ],
+    correct: [0],
+  },
+  {
+    id: 302,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Which two settings improve accessibility for users with visual impairments? (Choose 2.)",
+    options: [
+      "A. Enabling high-contrast mode",
+      "B. Using screen magnifier",
+      "C. Increasing the refresh rate",
+      "D. Disabling notifications",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 303,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about calendar event reminders, select True or False.",
+    statements: [
+      {
+        text: "You can set a different reminder time for each attendee.",
+        correct: "False",
+      },
+      {
+        text: "You can set multiple reminders for a single event.",
+        correct: "True",
+      },
+      {
+        text: "Reminders can be sent by email or pop-up alerts.",
+        correct: "True",
+      },
+      { text: "You can customize an event's reminder time.", correct: "True" },
+    ],
+  },
+  {
+    id: 304,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about cloud computing, select True or False.",
+    statements: [
+      {
+        text: "Cloud computing supports scalability of resources.",
+        correct: "True",
+      },
+      {
+        text: "Cloud computing requires all applications to be installed locally.",
+        correct: "False",
+      },
+      {
+        text: "Cloud computing allows users to access resources over the internet.",
+        correct: "True",
+      },
+      {
+        text: "Cloud computing eliminates the need for any internet connection.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 305,
+    module: 4,
+    type: "matching",
+    question:
+      "Move each technology concept from the list on the left to its description on the right.",
+    mappings: [
+      {
+        description: "Predicts and finishes words as you type",
+        term: "Autocomplete",
+      },
+      {
+        description: "Finds and fixes grammatical and spelling errors",
+        term: "Autocorrect",
+      },
+      {
+        description: "Provides resources over the Internet",
+        term: "Cloud computing",
+      },
+      {
+        description: "Uses technology to perform tasks without human input",
+        term: "Automation",
+      },
+    ],
+  },
+  {
+    id: 306,
+    module: 4,
+    type: "single",
+    question:
+      "A user complains that the screen looks washed out after moving their laptop near a window. Which adjustment should be made to improve the display?",
+    options: [
+      "A. Increase brightness.",
+      "B. Lower refresh rate.",
+      "C. Enable night mode.",
+      "D. Adjust gamma settings.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 307,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about sound adjustments, select True or False.",
+    statements: [
+      {
+        text: "Mono audio combines stereo channels into one.",
+        correct: "True",
+      },
+      {
+        text: "Volume control changes the overall loudness of audio.",
+        correct: "True",
+      },
+      {
+        text: "Balance control adjusts the distribution of sound between speakers.",
+        correct: "True",
+      },
+      {
+        text: "Equalizer settings can fix uneven sound between left and right speakers.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 308,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Which two actions can confirm a successful printer connection? (Choose 2.)",
+    options: [
+      "A. Printing a test page",
+      "B. Checking the printer queue for pending jobs",
+      "C. Restarting the computer",
+      "D. Selecting 'Set as default printer'",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 309,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about components, select True or False.",
+    statements: [
+      {
+        text: "Processing devices change input data into useful output.",
+        correct: "True",
+      },
+      {
+        text: "A GPU is a processing device that handles pictures and graphics.",
+        correct: "True",
+      },
+      {
+        text: "The CPU is an output device that shows information to users.",
+        correct: "False",
+      },
+      {
+        text: "RAM is a processing device because it stores data for a short time.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 310,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the three statements about creating and managing digital identities, select True or False.",
+    statements: [
+      {
+        text: "One digital identity is enough for all online tasks, both personal and work.",
+        correct: "False",
+      },
+      {
+        text: "Your professional digital identity shows your skills to possible employers or coworkers.",
+        correct: "True",
+      },
+      {
+        text: "Using the same password for your work and personal accounts is easier and safer.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 311,
+    module: 4,
+    type: "matching",
+    question:
+      "Move each password management practice from the list on the left to its matching benefit on the right.",
+    mappings: [
+      {
+        description: "Adds an extra safety layer beyond passwords",
+        term: "Enabling two-factor authentication",
+      },
+      {
+        description: "Keeps account protected against new threats",
+        term: "Regularly updating passwords",
+      },
+      {
+        description: "Keeps passwords safe in one locked place",
+        term: "Using a password manager",
+      },
+      {
+        description:
+          "Stops unauthorized access if one site using that password is hacked",
+        term: "Creating unique passwords",
+      },
+    ],
+  },
+  {
+    id: 312,
+    module: 4,
+    type: "true_false",
+    question:
+      "Your class is planning a fundraiser. You are in charge of emailing people. For each of the four actions, select whether it is Appropriate or Inappropriate.",
+    statements: [
+      { text: "Using all caps for emphasis", correct: "Inappropriate" },
+      { text: "Sharing confidential information", correct: "Inappropriate" },
+      { text: "Responding promptly to questions", correct: "Appropriate" },
+      { text: "Keeping messages concise and relevant", correct: "Appropriate" },
+    ],
+  },
+  {
+    id: 313,
+    module: 4,
+    type: "true_false",
+    question:
+      "You are working with a group of classmates and emailing your teacher. For each of the four statements about email etiquette, select True or False.",
+    statements: [
+      { text: "Use a clear subject line", correct: "True" },
+      { text: "Proofread before sending", correct: "True" },
+      { text: "Use professional greetings", correct: "True" },
+      {
+        text: "Mark the emails you send to your teacher as important.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 314,
+    module: 4,
+    type: "matching",
+    question:
+      "Move each principle of digital etiquette from the list on the left to its example on the right.",
+    mappings: [
+      {
+        description: "Not sharing private client data",
+        term: "Confidentiality",
+      },
+      {
+        description: "Avoiding acronyms in professional emails",
+        term: "Clarity",
+      },
+      {
+        description: "Replying to messages within agreed timeframes",
+        term: "Timeliness",
+      },
+      {
+        description: "Scheduling meetings considering time zones",
+        term: "Cultural sensitivity",
+      },
+    ],
+  },
+  {
+    id: 315,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Jordan encounters an unfamiliar feature with a tight deadline. What two actions should Jordan take to increase digital competence? (Choose 2.)",
+    options: [
+      "A. Search for tutorials and user guides in the tool's help section.",
+      "B. Post a question in an online community forum for the tool.",
+      "C. Ask a coworker for a quick explanation and rely on that guidance going forward.",
+      "D. Watch a video review of the tool on a popular tech channel to learn about its future.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 316,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Priya needs to create a custom chart using a tool with limited official documentation. What two actions should Priya take? (Choose 2.)",
+    options: [
+      "A. Post a question in the tool's official community forum asking for guidance on creating the custom chart.",
+      "B. Search for a user-created tutorial video on a video-sharing platform.",
+      "C. Experiment with the tool's settings until the custom chart looks correct.",
+      "D. Use a similar chart type from the basic guide and hope it meets the project's needs.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 317,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about filtering search results, select True or False.",
+    statements: [
+      {
+        text: "Filters can include date, file type and region.",
+        correct: "True",
+      },
+      { text: "Filters guarantee accurate information.", correct: "False" },
+      { text: "Removing filters narrows search results.", correct: "False" },
+      {
+        text: "Filters help organize results based on user needs.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 318,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the three statements about assessing bias, select True or False.",
+    statements: [
+      {
+        text: "Biased content often uses emotional language.",
+        correct: "True",
+      },
+      {
+        text: "Neutral content avoids presenting multiple viewpoints.",
+        correct: "False",
+      },
+      {
+        text: "Researching the author's affiliations can uncover potential bias.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 319,
+    module: 4,
+    type: "matching",
+    question:
+      "Move each factor from the list on the left to its description on the right.",
+    mappings: [
+      { description: "Content favors one perspective", term: "Bias" },
+      { description: "Information relates to the topic", term: "Relevance" },
+      {
+        description: "Source is trustworthy and authoritative",
+        term: "Credibility",
+      },
+      {
+        description: "Information is correct and supported by evidence",
+        term: "Accuracy",
+      },
+    ],
+  },
+  {
+    id: 320,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about online data collection, select True or False.",
+    statements: [
+      {
+        text: "Surveys can be distributed through email links.",
+        correct: "True",
+      },
+      {
+        text: "Screenshots are an effective way to collect structured data.",
+        correct: "False",
+      },
+      {
+        text: "Online forms can include text fields and multiple-choice questions.",
+        correct: "True",
+      },
+      {
+        text: "Data collected online is typically stored on remote servers or cloud systems.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 321,
+    module: 4,
+    type: "single",
+    question:
+      "You are designing a presentation for a client who wants all slides to have the same background, font, and color scheme. Which feature should you use?",
+    options: [
+      "A. Slide Master",
+      "B. Design Ideas",
+      "C. Backgrounds",
+      "D. Layout",
+    ],
+    correct: [0],
+  },
+  {
+    id: 322,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about tracking changes in a document, select True or False.",
+    statements: [
+      {
+        text: "Track Changes automatically accepts all edits.",
+        correct: "False",
+      },
+      {
+        text: "Track Changes can show insertions and deletions.",
+        correct: "True",
+      },
+      {
+        text: "Track Changes is used to apply consistent formatting.",
+        correct: "False",
+      },
+      {
+        text: "Track Changes highlights edits made by different users.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 323,
+    module: 4,
+    type: "matching",
+    question:
+      "Move each function from the list on the left to the task you would use it for on the right.",
+    mappings: [
+      {
+        description: "Calculate the mean of a list of test scores",
+        term: "AVERAGE",
+      },
+      {
+        description: "Identify the single highest value in a sales column",
+        term: "MAX",
+      },
+      {
+        description: "Insert a total for B2:B15 using a one-click command",
+        term: "AutoSum (SUM)",
+      },
+      {
+        description:
+          "Return the number of cells in a range that contain numeric values",
+        term: "COUNT",
+      },
+    ],
+  },
+  {
+    id: 324,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Which three practices help maintain speed and accuracy during routine typing and editing tasks? (Choose 3.)",
+    options: [
+      "A. Maintain a neutral wrist position with forearms roughly parallel to the floor.",
+      "B. Use the Shift key for a single capital letter instead of toggling Caps Lock.",
+      "C. Occasionally look down at the keyboard to confirm each key before pressing it.",
+      "D. Rest your palms on the keyboard's front edge while actively typing.",
+      "E. Place index fingers on F and J and return to the home row after reaching.",
+      "F. Strike keys firmly to ensure each keystroke registers.",
+    ],
+    correct: [0, 1, 4],
+  },
+  {
+    id: 325,
+    module: 4,
+    type: "single",
+    question:
+      "Why should you compress a folder into a ZIP file before emailing it?",
+    options: [
+      "A. It reduces the total size and combines many items into one attachment.",
+      "B. It makes every file inside editable by anyone, even without software.",
+      "C. It improves image quality in the files.",
+      "D. It automatically encrypts the contents with strong security.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 326,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Which three practices improve your ability to find files later? (Choose 3.)",
+    options: [
+      "A. Use consistent, descriptive file names that reflect the file's content and context.",
+      "B. Establish a predictable folder structure that mirrors your workflow.",
+      "C. Apply available metadata (tags or properties) to categorize files.",
+      "D. Change file extensions to pdf so everyone can open it.",
+      "E. Include your initials in every file name.",
+      "F. Keep multiple versions with identical names in the same folder.",
+    ],
+    correct: [0, 1, 2],
+  },
+  {
+    id: 327,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements, select True or False regarding file versioning and compression.",
+    statements: [
+      {
+        text: "Version history lets you view or restore an earlier saved version of a file.",
+        correct: "True",
+      },
+      {
+        text: "Uploading a new file to replace an old one automatically removes the old file's version history.",
+        correct: "False",
+      },
+      {
+        text: "Compressing multiple files into a ZIP file makes them easier to upload.",
+        correct: "True",
+      },
+      {
+        text: "Compressing a video into a ZIP file reduces the audio and visual quality.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 328,
+    module: 4,
+    type: "single",
+    question:
+      "You want to use a Creative Commons image labeled Non-Commercial Use, Requires Attribution (CC BY-NC). What should you do?",
+    options: [
+      "A. Don't use the image and find something else.",
+      "B. Use with credit because the image is allowed for business.",
+      "C. Use the image without making edits.",
+      "D. Use the image if the brochure will be free to download.",
+    ],
+    correct: [3],
+  },
+  {
+    id: 329,
+    module: 4,
+    type: "checkbox",
+    question:
+      "You are creating a step-by-step guide for nontechnical community members printing at home. Which two actions should you do? (Choose 2.)",
+    options: [
+      "A. Use plain language and numbered steps.",
+      "B. Export a printer-friendly PDF with high contrast.",
+      "C. Share the design source file (psd) for editing.",
+      "D. Add captions for your videos so the information is printed.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 330,
+    module: 4,
+    type: "single",
+    question:
+      "Team members are in different time zones, file is too large to attach, and you want feedback stored together. What platform should you use?",
+    options: [
+      "A. A shared cloud document that allows team members to review and annotate in one location.",
+      "B. A group video meeting scheduled for later today to discuss live.",
+      "C. A private team chat channel post with the file uploaded.",
+      "D. Individual instant messages to each teammate.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 331,
+    module: 4,
+    type: "single",
+    question:
+      "A heat advisory has been issued. You need to confirm whether cooling centers are open and find the nearest location. Which online resource is authoritative?",
+    options: [
+      "A. City emergency alerts page with live status and an official locations map.",
+      "B. Local news article covering the heat wave with reader comments.",
+      "C. Private neighborhood social app post from last summer.",
+      "D. Third-party business directory page for a nearby community center.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 332,
+    module: 4,
+    type: "single",
+    question:
+      "You installed a free game selling extra items inside the app on a shared tablet with younger siblings. Which setting reduces unwanted charges?",
+    options: [
+      "A. Require a password or fingerprint for every purchase.",
+      "B. Store the card on the device for one-tap checkout.",
+      "C. Permit purchases without a password for 60 minutes.",
+      "D. Disable marketing alerts about new in-game items.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 333,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about internet commerce, select True or False.",
+    statements: [
+      {
+        text: "A cloud backup subscription is a service because you pay for ongoing access rather than owning a product.",
+        correct: "True",
+      },
+      {
+        text: "A downloadable movie you can watch offline at any time after purchase is a digital good.",
+        correct: "True",
+      },
+      {
+        text: "A restaurant delivery order is only a good, not a service.",
+        correct: "False",
+      },
+      {
+        text: "Renting a video in an app for 48 hours is a service because you pay for temporary access.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 334,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Which two tools enable multiple people to edit the same document online at the same time? (Choose 2.)",
+    options: [
+      "A. Google Docs",
+      "B. Acrobat Reader",
+      "C. Notepad",
+      "D. Microsoft 365",
+    ],
+    correct: [0, 3],
+  },
+  {
+    id: 335,
+    module: 4,
+    type: "matching",
+    question:
+      "Move each editing approach from the list on the left to its characteristic on the right.",
+    mappings: [
+      {
+        description:
+          "Teammates edit offline and later upload different versions that must be merged.",
+        term: "Asynchronous",
+      },
+      {
+        description:
+          "Minor typing delays may occur when several people type in the same paragraph simultaneously.",
+        term: "Synchronous",
+      },
+      {
+        description:
+          "A reliable internet connection is needed so multiple users can edit a shared document.",
+        term: "Synchronous",
+      },
+      {
+        description:
+          "Contributors post suggestions which the file owner accepts or rejects after review.",
+        term: "Asynchronous",
+      },
+    ],
+  },
+  {
+    id: 336,
+    module: 4,
+    type: "checkbox",
+    question:
+      "You are collaborating with a group of classmates and need to edit the same online document at the same time, seeing who makes changes. Which two actions should you choose? (Choose 2.)",
+    options: [
+      "A. Share the document on a cloud service with version history and grant edit access.",
+      "B. Share the document using an online app with co-authoring and notation.",
+      "C. Share the document by attaching it to an email.",
+      "D. Share the document with your classmates as commenters.",
+      "E. Share the document as an exported PDF.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 337,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Which two actions apply digital etiquette when reviewing a shared draft asynchronously? (Choose 2.)",
+    options: [
+      "A. Use comments with @mentions to ask clarifying questions where issues appear.",
+      "B. Turn on Suggesting/Track Changes so edits are visible and attributed.",
+      "C. Download a personal copy, make edits privately, and email back later.",
+      "D. Rewrite sections directly in the main text without explanation to save time.",
+      "E. Tag multiple stakeholders across unrelated sections.",
+    ],
+    correct: [0, 1],
+  },
+  {
+    id: 338,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements about meetings and reviews, select True or False.",
+    statements: [
+      {
+        text: "In small-team update meetings, giving a brief status, noting blocking issues, and stating next steps respects teammates' time.",
+        correct: "True",
+      },
+      {
+        text: "For asynchronous review of a shared draft, downloading your own copy and emailing edits back keeps feedback centralized.",
+        correct: "False",
+      },
+      {
+        text: "In a public webinar, screen sharing without being asked shows engagement and is appropriate.",
+        correct: "False",
+      },
+      {
+        text: "In large meetings, staying muted when not speaking and using Raise Hand helps keep discussion orderly.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 339,
+    module: 4,
+    type: "matching",
+    question:
+      "Move each accessibility feature from the list on the left to its corresponding user need on the right.",
+    mappings: [
+      {
+        description:
+          "Operate the computer with limited hand mobility or dexterity",
+        term: "Voice control (OS voice access with built-in mic)",
+      },
+      {
+        description:
+          "Reduce neck/back strain and accommodate seated, standing, or wheelchair users",
+        term: "Adjustable height desk",
+      },
+      {
+        description:
+          "Improve on-screen readability for users with low vision or visual fatigue",
+        term: "Screen magnifier/zoom with high contrast display",
+      },
+      {
+        description: "Improve typing accuracy for users with low vision",
+        term: "Large-print keyboard or keycap overlays",
+      },
+    ],
+  },
+  {
+    id: 340,
+    module: 4,
+    type: "single",
+    question:
+      "Your team is updating a public computer lab to better follow universal hardware design. Which choice supports universal design principles for the widest range of users?",
+    options: [
+      "A. Install height-adjustable desks and adjustable monitor arms at all workstations.",
+      "B. Replace one PC with a special workstation reserved for users with disabilities.",
+      "C. Post a sign that assistance is available upon request.",
+      "D. Add high-DPI gaming mice to every station for faster pointing.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 341,
+    module: 4,
+    type: "single",
+    question:
+      "Ten minutes after posting a rude public comment about a classmate on TikTok, you privatize it, but others have already replied and shared it. What outcome describes the remaining risk?",
+    options: [
+      "A. Screenshots and reshares may continue circulating, harming your reputation even after deletion.",
+      "B. The deleted comment cannot affect you or your classmate now that it has been removed.",
+      "C. Your home internet service will automatically suspend your account.",
+      "D. People who replied must remove every reply per platform policy.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 342,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the four statements regarding digital well-being, select True or False.",
+    statements: [
+      {
+        text: "Turning on a blue-light filter at night is an effective way to prevent sleep problems caused by late-night social media use.",
+        correct: "True",
+      },
+      {
+        text: "Scheduling quiet hours or Do Not Disturb can reduce notification-driven stress without uninstalling apps.",
+        correct: "True",
+      },
+      {
+        text: "Curating your feed by unfollowing or muting accounts that trigger anxiety is an appropriate self-care step.",
+        correct: "True",
+      },
+      {
+        text: "When an online exchange becomes hostile, continuing to reply until the other person calms down is a healthy way to protect well-being.",
+        correct: "False",
+      },
+    ],
+  },
+  {
+    id: 343,
+    module: 4,
+    type: "single",
+    question:
+      "During a two-hour study block, you feel FOMO as classmates post live updates about a campus event. Which action reduces FOMO while protecting focus?",
+    options: [
+      "A. Enable Focus/Do Not Disturb for the study block and schedule a 5-minute check at the midpoint.",
+      "B. Leave notifications on but lower the volume so alerts are less noticeable.",
+      "C. Keep group chats open on a second screen to glance at between problems.",
+      "D. Turn on push notifications for event posts to avoid missing anything important.",
+    ],
+    correct: [0],
+  },
+  {
+    id: 344,
+    module: 4,
+    type: "true_false",
+    question:
+      "For each of the three statements about device security, select True or False.",
+    statements: [
+      {
+        text: "It is safe to plug in an unknown USB flash drive as long as you don't open any files from it.",
+        correct: "False",
+      },
+      {
+        text: "A charge-only cable will protect your device from data risks when using a public USB charging station.",
+        correct: "True",
+      },
+      {
+        text: "You should block camera access until you confirm that a new app is legitimate and actually needs the camera.",
+        correct: "True",
+      },
+    ],
+  },
+  {
+    id: 345,
+    module: 4,
+    type: "checkbox",
+    question:
+      "Which two settings enable device encryption on common desktop operating systems? (Choose 2.)",
+    options: [
+      "A. BitLocker (Windows)",
+      "B. FileVault (macOS)",
+      "C. Windows Hello PIN (Windows)",
+      "D. Airplane mode (device)",
+      "E. Secure Boot (UEFI firmware)",
+    ],
+    correct: [0, 1],
+  },
+];
+
+// Asosiy massivga qo'shish:
+questions.push(...module4Questions);
