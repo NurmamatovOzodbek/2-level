@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IC3 GS6 Simulator Web App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+        margin: 0;
+        padding: 15px;
+        color: #333;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .q-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #1e293b;
+      }
+      .option-btn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 14px;
+      }
+      .option-btn:hover {
+        background: #f1f5f9;
+      }
+      .option-btn.selected {
+        border-color: #3b82f6;
+        background-color: #eff6ff;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #cbd5e1;
+        padding: 10px;
+        text-align: left;
+        font-size: 13px;
+      }
+      th {
+        background-color: #f8fafc;
+      }
+      .tf-radio {
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+      }
+      .btn-submit {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: #22c55e;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+      .btn-submit:hover {
+        background: #16a34a;
+      }
+      .feedback {
+        margin-top: 15px;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        display: none;
+      }
+      .correct {
+        background: #dcfce7;
+        color: #15803d;
+      }
+      .incorrect {
+        background: #fee2e2;
+        color: #b91c1c;
+      }
+      .nav-btns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+      .nav-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        background: #64748b;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <!-- 1. MODULLARNI TANLASH EKRANI (Boshida shu ko'rinadi) -->
+      <div id="module-select-screen" style="text-align: center; padding: 10px">
+        <h2 style="color: #1e293b; margin-bottom: 8px">
+          IC3 GS6 Level 2: Modullar 📚
+        </h2>
+        <p style="color: #64748b; font-size: 14px; margin-bottom: 20px">
+          Shug'ullanmoqchi bo'lgan modulingizni tanlang:
+        </p>
+
+        <!-- Modullar Grid Ko'rinishida -->
+        <div
+          id="modules-container"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+          "
+        >
+          <!-- Modul kartochkalari JS orqali avtomatik chiziladi -->
+        </div>
+      </div>
+
+      <!-- 2. VAQTNI TANLASH VA START EKRANI -->
+      <div
+        id="start-screen"
+        style="
+          display: none;
+          text-align: center;
+          padding: 20px 15px;
+          background: #f8fafc;
+          border-radius: 8px;
+          border: 1px solid #e2e8f0;
+          margin-bottom: 20px;
+        "
+      >
+        <button
+          onclick="backToModules()"
+          style="
+            float: left;
+            background: transparent;
+            border: none;
+            font-size: 14px;
+            color: #2563eb;
+            cursor: pointer;
+            font-weight: bold;
+          "
+        >
+          ◄ Modullarga qaytish
+        </button>
+        <div style="clear: both"></div>
+
+        <h2 id="selected-module-title" style="margin-top: 10px; color: #1e293b">
+          Modul 1
+        </h2>
+        <p style="color: #64748b; font-size: 14px">
+          Testni boshlashdan oldin vaqt rejimini tanlang:
+        </p>
+
+        <div style="margin: 20px 0">
+          <label
+            for="timer-select"
+            style="font-weight: bold; margin-right: 10px; color: #334155"
+            >Vaqtni tanlang:</label
+          >
+          <select
+            id="timer-select"
+            style="
+              padding: 8px 14px;
+              border-radius: 6px;
+              border: 1px solid #cbd5e1;
+              font-size: 15px;
+              cursor: pointer;
+            "
+          >
+            <option value="15">15 daqiqa</option>
+            <option value="30" selected>30 daqiqa</option>
+            <option value="60">1 soat (60 daqiqa)</option>
+            <option value="0">Vaqtsiz (Cheklovsiz)</option>
+          </select>
+        </div>
+
+        <button
+          class="btn-submit"
+          onclick="startQuiz()"
+          style="
+            font-size: 16px;
+            padding: 12px 24px;
+            width: auto;
+            display: inline-block;
+          "
+        >
+          Testni Boshlash 🚀
+        </button>
+      </div>
+
+      <!-- 3. ASOSIY TEST MAYDONI -->
+      <div id="quiz-area" style="display: none">
+        <div style="margin-bottom: 15px">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 5px;
+            "
+          >
+            <span
+              id="progress-text"
+              style="font-size: 14px; font-weight: bold; color: #475569"
+              >Bajarildi: 0% (0/0)</span
+            >
+            <span
+              id="timer-text"
+              style="font-size: 14px; font-weight: bold; color: #e11d48"
+              >⏱️ --:--</span
+            >
+          </div>
+          <div
+            style="
+              width: 100%;
+              background-color: #e2e8f0;
+              height: 8px;
+              border-radius: 4px;
+              overflow: hidden;
+            "
+          >
+            <div
+              id="progress-bar"
+              style="
+                width: 0%;
+                height: 100%;
+                background-color: #2563eb;
+                transition: width 0.3s;
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+          "
+        >
+          <button
+            onclick="backToModules()"
+            style="
+              background: transparent;
+              border: none;
+              color: #64748b;
+              cursor: pointer;
+              font-size: 13px;
+            "
+          >
+            ◄ Chiqish
+          </button>
+          <button
+            id="btn-flag"
+            onclick="toggleFlag()"
+            style="
+              background: transparent;
+              border: 1px solid #cbd5e1;
+              border-radius: 6px;
+              padding: 6px 12px;
+              cursor: pointer;
+            "
+          >
+            📌 Keyinroq ko'rish
+          </button>
+        </div>
+
+        <div id="quiz-container"></div>
+        <div id="feedback" class="feedback"></div>
+
+        <button class="btn-submit" onclick="checkAnswer()">
+          Javobni tekshirish
+        </button>
+
+        <div class="nav-btns">
+          <button class="nav-btn" onclick="prevQuestion()">◄ Oldingisi</button>
+          <button class="nav-btn" onclick="nextQuestion()">Keyingisi ►</button>
+        </div>
+
+        <div
+          style="
+            margin-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
+          "
+        >
+          <div
+            style="
+              font-weight: bold;
+              margin-bottom: 10px;
+              font-size: 14px;
+              color: #475569;
+            "
+          >
+            Savollar xaritasi:
+          </div>
+          <div
+            id="question-grid"
+            style="display: flex; flex-wrap: wrap; gap: 8px"
+          ></div>
+        </div>
+      </div>
+
+      <!-- 4. TAHLIL VA NATIJA BLOKI -->
+      <div
+        id="result-container"
+        style="display: none; margin-top: 20px; text-align: center"
+      >
+        <h2>Test Natijalari 📊</h2>
+        <div id="stats-summary" style="font-size: 18px; margin: 15px 0"></div>
+
+        <div
+          class="result-actions"
+          style="
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <button class="btn-submit" onclick="restartQuiz(false)">
+            Qaytadan boshlash 🔄
+          </button>
+          <button
+            id="btn-retry-wrong"
+            class="btn-submit"
+            onclick="restartQuiz(true)"
+            style="background-color: #e11d48; display: none"
+          >
+            Faqat xatolarni ishlash ❌
+          </button>
+          <button
+            class="btn-submit"
+            onclick="backToModules()"
+            style="background-color: #475569"
+          >
+            Bosh menyuga (Modullarga) qaytish 🏠
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
