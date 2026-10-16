@@ -226,10 +226,10 @@ const questions = [
     question:
       "You are using a new software program. For each resource, select Yes if you could use it to find help or No if you could not.",
     statements: [
-      { text: "The Help feature within the program", correct: "Yes" },
-      { text: "The software installation instructions", correct: "No" },
-      { text: "An online forum dedicated to the software", correct: "Yes" },
-      { text: "The LinkedIn page for the software company", correct: "No" },
+      { text: "The Help feature within the program", correct: "True" },
+      { text: "The software installation instructions", correct: "False" },
+      { text: "An online forum dedicated to the software", correct: "True" },
+      { text: "The LinkedIn page for the software company", correct: "False" },
     ],
   },
   {
@@ -241,14 +241,14 @@ const questions = [
     statements: [
       {
         text: "An interview with a person who survived a shark attack",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "An online resource like Encyclopedia Britannica",
-        correct: "Yes",
+        correct: "True",
       },
-      { text: "Your classmates", correct: "No" },
-      { text: "Articles from Google Scholar", correct: "Yes" },
+      { text: "Your classmates", correct: "False" },
+      { text: "Articles from Google Scholar", correct: "True" },
     ],
   },
   {
@@ -280,9 +280,9 @@ const questions = [
     question:
       "You are preparing to write a research paper. For each statement, select Yes if you should consider it when determining the credibility of the study or No if you should not.",
     statements: [
-      { text: "The popularity of the study", correct: "No" },
-      { text: "The organization that funded the study", correct: "Yes" },
-      { text: "The entity that published the study results", correct: "Yes" },
+      { text: "The popularity of the study", correct: "False" },
+      { text: "The organization that funded the study", correct: "True" },
+      { text: "The entity that published the study results", correct: "True" },
     ],
   },
   {
@@ -495,7 +495,7 @@ const questions = [
       "C. Use reply-all to let the entire team know about the changes.",
       "D. Send a thumbs-up reaction to show you received the email.",
     ],
-    correct: [1, 2],
+    correct: [0, 1],
   },
   {
     id: 33,
@@ -610,19 +610,19 @@ const questions = [
     statements: [
       {
         text: "Correct other people whenever their opinions and ideas are wrong",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "Give fair criticism and constructive feedback, phrasing it respectfully.",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "Use abbreviations, slang, and emojis to give comments personality.",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "Use good grammar and spelling so comments are easy to understand.",
-        correct: "Yes",
+        correct: "True",
       },
     ],
   },
@@ -800,7 +800,7 @@ const module2Questions = [
       },
       {
         text: "Biometric verification and passcodes are two security methods commonly used for device encryption.",
-        correct: "True",
+        correct: "False",
       },
       {
         text: "In End-to-End encryption, information is encrypted on the originating device and only decrypted once it arrives on the target device.",
@@ -976,10 +976,10 @@ const module2Questions = [
     question:
       "You are using a new software program. For each resource, select Yes if you could use it to find help or No if you could not.",
     statements: [
-      { text: "The Help feature within the program", correct: "Yes" },
-      { text: "The software installation instructions", correct: "No" },
-      { text: "The LinkedIn page for the software company", correct: "No" },
-      { text: "An online forum dedicated to the software", correct: "Yes" },
+      { text: "The Help feature within the program", correct: "True" },
+      { text: "The software installation instructions", correct: "False" },
+      { text: "The LinkedIn page for the software company", correct: "False" },
+      { text: "An online forum dedicated to the software", correct: "True" },
     ],
   },
   {
@@ -1012,18 +1012,18 @@ const module2Questions = [
     question:
       "You need to research the impacts of online learning. For each statement, select Yes if the search result is relevant or No if it is not.",
     statements: [
-      { text: "An article about the benefits of education", correct: "No" },
+      { text: "An article about the benefits of education", correct: "False" },
       {
         text: "A website offering educational resources for sale",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "A graph comparing test scores of students in online and in-person educational systems",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "An article in an educational magazine about teachers' online teaching experiences",
-        correct: "Yes",
+        correct: "True",
       },
     ],
   },
@@ -1120,7 +1120,7 @@ const module2Questions = [
   {
     id: 125,
     module: 2,
-    type: "single",
+    type: "checkbox",
     question:
       "Which two statements about permissions of a locally stored word processing document are true? (Choose 2.)",
     options: [
@@ -1210,11 +1210,11 @@ const module2Questions = [
     statements: [
       {
         text: "The DMCA is a law intended to make it easier for copyright to be applied to original works by an artist.",
-        correct: "True",
+        correct: "False",
       },
       {
         text: "Fair Use and Public Domain govern the use of copyrighted materials for individual purposes, like teaching.",
-        correct: "True",
+        correct: "False",
       },
       {
         text: "Creative Commons standards include clear descriptions of what is required to use materials.",
@@ -1263,19 +1263,19 @@ const module2Questions = [
     statements: [
       {
         text: "Expect other community members to treat the information he shares as private.",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "Introduce himself and provide his personal email address.",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "Reply to a comment stating that he disagrees, in a respectful tone.",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "Share a comment from the community with another group without stating who created it.",
-        correct: "No",
+        correct: "False",
       },
     ],
   },
@@ -1407,19 +1407,19 @@ const module2Questions = [
     statements: [
       {
         text: "Correct other people whenever their opinions and ideas are wrong.",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "Give fair criticism and constructive feedback, phrasing it respectfully.",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "Use abbreviations, slang, and emojis to give comments personality.",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "Use good grammar and spelling so comments are easy to understand.",
-        correct: "Yes",
+        correct: "True",
       },
     ],
   },
@@ -1430,15 +1430,15 @@ const module2Questions = [
     question:
       "Your job requires you to work at a computer for several hours each day. For each action, select Yes if it will prevent eye strain or No if it will not.",
     statements: [
-      { text: "Blink often.", correct: "Yes" },
-      { text: "Work in a very dark room.", correct: "No" },
+      { text: "Blink often.", correct: "True" },
+      { text: "Work in a very dark room.", correct: "False" },
       {
         text: "Frequently change your focus from the computer screen to something at least six meters away from you.",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "Position your monitor so it is an arm's length away from you and the top of the screen is at your eye level.",
-        correct: "Yes",
+        correct: "True",
       },
     ],
   },
