@@ -1534,7 +1534,7 @@ const module3Questions = [
       },
       {
         text: "USB drives can cause physical damage to a computer's components.",
-        correct: "False",
+        correct: "True",
       },
     ],
   },
@@ -1606,7 +1606,7 @@ const module3Questions = [
       "C. They offer individual adaptations for people with disabilities.",
       "D. UD environments focus on increasingly multiethnic populations.",
     ],
-    correct: [0, 2],
+    correct: [0, 1],
   },
   {
     id: 208,
@@ -1616,12 +1616,12 @@ const module3Questions = [
       "You need to identify the advantages of inkjet printers and laser printers. Move each advantage to the corresponding printer type.",
     mappings: [
       {
-        description: "Environmentally friendly (Laser Printer)",
-        term: "Laser Printer",
+        description: "Environmentally friendly",
+        term: "Inkjet Printer",
       },
       {
         description:
-          "Documents are dry to the touch when printed (Laser Printer)",
+          "Documents are dry to the touch when printed",
         term: "Laser Printer",
       },
     ],
@@ -1678,19 +1678,19 @@ const module3Questions = [
     statements: [
       {
         text: '"Everyone knows this isn\'t true. Why are you spreading harmful rumors?"',
-        correct: "No",
+        correct: "False",
       },
       {
         text: '"Dr. Janae Johnson of Harvard Medical School has proven this idea is false."',
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: '"Here\'s a list of current resources that may help to change your mind."',
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "\"You skipped Yale Med School's latest findings. I'm so tired of internet trolls!\"",
-        correct: "No",
+        correct: "False",
       },
     ],
   },
@@ -1745,14 +1745,14 @@ const module3Questions = [
     statements: [
       {
         text: "An interview with a person who survived a shark attack",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "An online resource like Encyclopedia Britannica",
-        correct: "Yes",
+        correct: "True",
       },
-      { text: "Your classmates", correct: "No" },
-      { text: "Articles from Google Scholar", correct: "Yes" },
+      { text: "Your classmates", correct: "False" },
+      { text: "Articles from Google Scholar", correct: "True" },
     ],
   },
   {
@@ -1776,18 +1776,18 @@ const module3Questions = [
     question:
       "You need to research the impacts of online learning. For each statement, select Yes if the search result is relevant or No if it is not.",
     statements: [
-      { text: "An article about the benefits of education", correct: "No" },
+      { text: "An article about the benefits of education", correct: "False" },
       {
         text: "A website offering educational resources for sale",
-        correct: "No",
+        correct: "False",
       },
       {
         text: "A graph comparing test scores of students in online and in-person educational systems",
-        correct: "Yes",
+        correct: "True",
       },
       {
         text: "An article in an educational magazine about teachers' online teaching experiences",
-        correct: "Yes",
+        correct: "True",
       },
     ],
   },
@@ -1798,12 +1798,12 @@ const module3Questions = [
     question:
       "You need to assess whether the content of an online article is biased. For each aspect, select Yes if you should check it to assess bias or No if you should not.",
     statements: [
-      { text: "Article funding source", correct: "Yes" },
-      { text: "Article publication date", correct: "Yes" },
-      { text: "Education level of the author", correct: "No" },
+      { text: "Article funding source", correct: "True" },
+      { text: "Article publication date", correct: "False" },
+      { text: "Education level of the author", correct: "False" },
       {
         text: "Connections of the author to political organizations",
-        correct: "Yes",
+        correct: "True",
       },
     ],
   },
@@ -2147,11 +2147,11 @@ const module3Questions = [
     question:
       "Your employer provides you with an adjustable chair to help prevent repetitive strain injury (RSI). For each position, select Yes if it helps or No if it does not.",
     statements: [
-      { text: "Your knees are higher than your hips.", correct: "No" },
-      { text: "Your feet are flat on the floor or footrest.", correct: "Yes" },
+      { text: "Your knees are higher than your hips.", correct: "False" },
+      { text: "Your feet are flat on the floor or footrest.", correct: "True" },
       {
         text: "Your arms form a 90-degree angle, with your elbows at your side.",
-        correct: "Yes",
+        correct: "True",
       },
     ],
   },
@@ -2162,10 +2162,10 @@ const module3Questions = [
     question:
       "For each physical symptom, select Yes if it is a sign of repetitive strain injury (RSI) or No if it is not.",
     statements: [
-      { text: "Pain", correct: "Yes" },
-      { text: "Itching", correct: "No" },
-      { text: "Tingling", correct: "Yes" },
-      { text: "Weakness", correct: "Yes" },
+      { text: "Pain", correct: "True" },
+      { text: "Itching", correct: "False" },
+      { text: "Tingling", correct: "True" },
+      { text: "Weakness", correct: "True" },
     ],
   },
   {
