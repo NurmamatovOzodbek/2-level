@@ -2341,7 +2341,7 @@ const module4Questions = [
       },
       {
         text: "Equalizer settings can fix uneven sound between left and right speakers.",
-        correct: "True",
+        correct: "False",
       },
     ],
   },
@@ -2438,10 +2438,10 @@ const module4Questions = [
     question:
       "Your class is planning a fundraiser. You are in charge of emailing people. For each of the four actions, select whether it is Appropriate or Inappropriate.",
     statements: [
-      { text: "Using all caps for emphasis", correct: "Inappropriate" },
-      { text: "Sharing confidential information", correct: "Inappropriate" },
-      { text: "Responding promptly to questions", correct: "Appropriate" },
-      { text: "Keeping messages concise and relevant", correct: "Appropriate" },
+      { text: "Using all caps for emphasis", correct: "False" },
+      { text: "Sharing confidential information", correct: "False" },
+      { text: "Responding promptly to questions", correct: "True" },
+      { text: "Keeping messages concise and relevant", correct: "True" },
     ],
   },
   {
